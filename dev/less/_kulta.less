@@ -1,0 +1,81 @@
+@import "ihover.less";
+@import "lightbox.less";
+@import "_about-page.less";
+@import "_portfolio-page.less";
+@import "_contact-page.less";
+
+
+
+@main-font-color:  #373737;
+@yellow:           #FECD5F;
+@yellow-dark:      #F1C35A;
+@yellow-darker:    #E2B655;
+@button-yellow:    #CEA54B;
+
+
+
+
+
+
+a{
+  -webkit-transition:  0.3s ease-out;
+  -moz-transition:  0.3s ease-out;
+  -o-transition:  0.3s ease-out;
+  transition:  0.3s ease-out;
+}
+
+body {
+
+  padding-top:50px;
+
+  }
+
+
+
+#hero {
+  background:url(../images/hero-home.jpg) center center no-repeat;
+  background-size:cover;
+    h1 { color:@main-font-color;font-weight:300;padding-top:20px;padding-bottom:50px;
+ small {color:white;text-shadow:1px 1px 0px @yellow-dark;}
+   }
+  h1 img{margin-left:auto;margin-right:auto;margin-bottom:30px;}
+
+}
+
+
+#whatWeDo {
+  background:@yellow-dark;
+  border-top:3px solid @yellow-darker;
+  border-bottom:3px solid @yellow-darker;
+  h2 {color:@main-font-color;font-weight:400;margin-bottom:100px;margin-top:50px;}
+  h3 {color:@main-font-color;font-weight:300;}
+  .services {margin-bottom:50px;}
+  .fa {padding: 10px 15px;color:white;text-shadow:1px 1px 0px darken(@yellow-darker, 15%);background:@yellow-darker;border:2px solid white;
+   }
+   .btn-default{margin-top:40px;margin-bottom:40px;
+   }
+}
+
+.btn-default{
+  color:@button-yellow;
+  background:transparent;
+  border:2px solid @button-yellow;
+  &:hover {background:@button-yellow;color:white;border:2px solid darken(@button-yellow,5%);  }
+}
+
+#projectsHome {
+  background:white;
+  padding-bottom:50px;
+    h2{margin-bottom:100px;margin-top:50px;}
+    img {width:100%;height:100%;}
+      #project{margin-bottom:30px;
+      img{border:4px solid darken(@yellow-darker, 15%);}
+      .btn-default {margin-bottom:0px;}
+      }
+
+}
+
+#footer {
+  background:@yellow;
+    p{margin-top:10px;}
+  }

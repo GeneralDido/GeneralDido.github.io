@@ -1,0 +1,1 @@
+$(function(){$("#home a:contains('Home')").parent().addClass("active"),$("#about a:contains('About')").parent().addClass("active"),$("#portfolio a:contains('Portfolio')").parent().addClass("active"),$("#contact a:contains('Contact')").parent().addClass("active"),$("#projectsHome").mixItUp()});
