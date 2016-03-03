@@ -1,161 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-    <style>
-        .callout {
-            display: table;
-            width: 100%;
-            height: 650px;
-            overflow:hidden;
-            background: url(img/Pako_Website_Banner_Slider_Google_Apps_Background.png) no-repeat center center scroll;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            background-size: cover;
-            -o-background-size: cover;
-        }
-        #make_margin {
-            margin-left: 140px;
-            margin-right: 140px;
-        }
-        #make_larger {
-            min-height: 600px;!important;
-            overflow:hidden;
-            width: 100%;
-        }
-        #make_larger2 {
-            min-height: 1230px;!important;
-            overflow:hidden;
-            width: 100%;
-        }
-        #make_larger3 {
-            min-height: 780px;!important;
-            overflow:hidden;
-            width: 100%;
-        }
-        #make_larger4 {
-            min-height: 650px;!important;
-            overflow:hidden;
-            width: 100%;
-        }
-        #make_larger5 {
-            min-height: 580px;!important;
-            overflow:hidden;
-            width: 100%;
-        }
-        #make_bigger {
-            font-size: 50px;
-        }
-        .wrapper:hover .fa-stack{
-            /*color: lawngreen;*/
-            transition: 0.9s;
-            transform: rotateY(360deg);
-        }
-        .wrapper{
-            display: inline-block;
-            width: 200px;
-            overflow: hidden;
-            text-align: center;
-        }
-        #hover_jet:hover{
-            transition: 0.6s;
-            transform: rotate(-90deg);
-        }
-        #hover_file:hover{
-            transition: 1.2s;
-            transform: rotateY(180deg);
-        }
-        #hover_quality:hover{
-            color: #f5aa02
-        }
-        .fa-spin-hover:hover {
-            animation: fa-spin 2s infinite linear;
-        }
-        a {
-            text-decoration: none !important;
-        }
-        .remove_transition:hover {
-            transition: none !important;
-            transform: none !important;
-        }
-        /* Tooltip */
-        .test + .tooltip > .tooltip-inner {
-            background-color: #f5aa02;
-            color: #FFFFFF;
-            border: 1px solid green;
-            padding: 16px;
-            font-size: 16px;
-        }
-        /* Tooltip on top */
-        .test + .tooltip.top > .tooltip-arrow {
-            border-top: 5px solid green;
-        }
-        /* Tooltip on bottom */
-        .test + .tooltip.bottom > .tooltip-arrow {
-            border-bottom: 5px solid blue;
-        }
-        /* Tooltip on left */
-        .test + .tooltip.left > .tooltip-arrow {
-            border-left: 5px solid red;
-        }
-        /* Tooltip on right */
-        .test + .tooltip.right > .tooltip-arrow {
-            border-right: 5px solid black;
-        }
-        .test2 + .tooltip > .tooltip-inner {
-            background-color: #30a36f;
-            color: #FFFFFF;
-            border: 1px solid green;
-            padding: 16px;
-            font-size: 16px;
-        }
-        * {
-            margin: 0;
-            padding: 0;
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-        }
-
-        .testimonial {
-            margin: 0 0 0 30px;
-            width:95%;
-            padding:15px;
-            position: relative;
-            font-style: italic;
-            border: 1px solid black;
-            position: relative;
-        }
-
-        .testimonial:before,
-        .testimonial:after {
-            position: absolute;
-            content:"";
-            width: 0;
-            height: 0;
-            top:100%;
-            left:15%;
-            border-left: 0px solid transparent;
-        }
-
-        .testimonial:before {
-
-            border-right: 34px solid transparent;
-            border-top: 34px solid black;
-            z-index:1;
-
-        }
-
-        .testimonial:after {
-            margin-top:-1px;
-            margin-left:1px;
-            border-right: 33px solid transparent;
-            border-top: 33px solid white;
-            z-index:2;
-        }
-
-
-    </style>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -175,6 +20,7 @@
     <link href="css/kulta.css" rel="stylesheet">
     <link href="css/kulta-responsive.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 
     <!-- Latest compiled and minified JavaScript -->
@@ -528,13 +374,11 @@
                 <div class="col-sm-8 col-sm-offset-2 text-center">
                     <h1>Contact</h1>
                     <p>
-                       <h4>Tell Us About Your Project! We would love to hear from you!</h4>
+                       <h4>We would love to hear from you!</h4>
                     </p>
                     <p>
                         <div>
                             <i class="fa fa-phone fa-stack-1x"> NL: (+31) 0684647783 / GR: (+30) 6972382127</i>
-                            <br/>
-                            <i class="fa fa-envelope-o fa-stack-1x"> info@datahood.nl</i>
                         </div>
                     </p>
                 </div>
@@ -542,34 +386,60 @@
 
             <div class="row">
                 <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-                    <form role="form" id="contactform" method="POST" onSubmit="alert('Thank you very much! We\'ll contact you soon!');">
+
+                    <form id="contactform" method="POST">
+                        <!--<div class="form-group">-->
+                            <!--<div class="input-group">-->
+                                <!--<span class="input-group-addon">Name</span>-->
+                                <!--<input name="form-name-input" type="text" name="name" class="form-control" required>-->
+                            <!--</div>-->
+                            <!--<div class="input-group">-->
+                                <!--<label for="email" class="col-sm-2 control-label">Email*</label>-->
+                                <!--<div class="col-sm-12">-->
+                                    <!--<span class="input-group-addon col-sm-2 control-label">Email</span>-->
+                                    <!--<input name="email" class="form-control" id='email' type="email" name="_replyto" placeholder="Example: yourname@domain.com" required>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="input-group">-->
+                                <!--<span class="input-group-addon">Subject</span>-->
+                                <!--<input name="form-subject-input" type="text" name="subject" class="form-control" required>-->
+                            <!--</div>-->
+                            <!--<div class="input-group">-->
+                                <!--<span class="input-group-addon">Description</span>-->
+                                <!--<textarea name="form-description-input" name="description" class="form-control" rows="4" cols="60" required></textarea>-->
+                            <!--</div>-->
+                            <!--<input type="text" name="_gotcha" style="display:none" />-->
+                            <!--<button type="submit" id="sendMessage">Send</button>-->
+                        <!--</div>-->
+
+                        <div class="form-group">
+                            <label for="subject" class="col-sm-2 control-label">Subject*</label>
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Example: Subject" required>
+                            </div>
+                        </div>
                         <div class="form-group">
                             <label for="email" class="col-sm-2 control-label">Email*</label>
                             <div class="col-sm-12">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Example: yourname@domain.com" required>
+                                <input type="email" class="form-control" id="email" name="_replyto" placeholder="Example: yourname@domain.com" required>
                             </div>
                         </div>
-
                         <div class="form-group">
                             <label for="name" class="col-sm-2 control-label">Name*</label>
                             <div class="col-sm-12">
                                 <input type="text" class="form-control" id="name" name="name" placeholder="Example: John Doe" required>
                             </div>
                         </div>
-                        <input type="hidden" name="_next" value="http://www.datahood.nl/" />
-                        <input type="hidden" name="_subject" value="Website contact" />
-                        <input type="text" name="_gotcha" style="display:none" />
-
                         <div class="form-group">
                             <label for="message" class="col-sm-2 control-label">Message*</label>
                             <div class="col-sm-12">
                                 <textarea type="text" class="form-control" id="message" name="message" rows="8" cols="40" placeholder="Your message here ..." required></textarea>
                             </div>
                         </div>
-
+                        <input type="text" name="_gotcha" style="display:none" />
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <button type="submit" value="Send" class="btn btn-default btn-block">Send Message</button>
+                                <button type="submit" id="sendMessage" class="btn btn-default btn-block">Send Message</button>
                             </div>
                         </div>
                     </form>
@@ -592,51 +462,7 @@
         </div>
     </section>
 
-    <!-- Custom Theme JavaScript -->
-    <script>
-        // Closes the sidebar menu
-        $("#menu-close").click(function(e) {
-            e.preventDefault();
-            $("#sidebar-wrapper").toggleClass("active");
-        });
-
-        // Opens the sidebar menu
-        $("#menu-toggle").click(function(e) {
-            e.preventDefault();
-            $("#sidebar-wrapper").toggleClass("active");
-        });
-
-        // Scrolls to the selected menu item on the page
-        $(function() {
-            $('a[href*=#]:not([href=#])').click(function() {
-                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    if (target.length) {
-                        $('html,body').animate({
-                            scrollTop: target.offset().top - 70
-                        }, 1000);
-                        return false;
-                    }
-                }
-            });
-        });
-        var contactform =  document.getElementById('contactform');
-        contactform.setAttribute('action', '//formspree.io/' + 'dimpanouris' + '@' + 'gmail' + '.' + 'com');
-        $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-74623303-2', 'auto');
-        ga('send', 'pageview');
-        
-    </script>
-
+    <script src="js/custom.js"></script>
 
 </body>
 </html>

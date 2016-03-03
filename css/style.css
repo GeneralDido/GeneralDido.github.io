@@ -1,0 +1,150 @@
+.callout {
+    display: table;
+    width: 100%;
+    height: 650px;
+    overflow:hidden;
+    background: url(../img/Pako_Website_Banner_Slider_Google_Apps_Background.png) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+#make_margin {
+    margin-left: 140px;
+    margin-right: 140px;
+}
+#make_larger {
+    min-height: 600px;!important;
+    overflow:hidden;
+    width: 100%;
+}
+#make_larger2 {
+    min-height: 1230px;!important;
+    overflow:hidden;
+    width: 100%;
+}
+#make_larger3 {
+    min-height: 780px;!important;
+    overflow:hidden;
+    width: 100%;
+}
+#make_larger4 {
+    min-height: 650px;!important;
+    overflow:hidden;
+    width: 100%;
+}
+#make_larger5 {
+    min-height: 580px;!important;
+    overflow:hidden;
+    width: 100%;
+}
+#make_bigger {
+    font-size: 50px;
+}
+.wrapper:hover .fa-stack{
+    /*color: lawngreen;*/
+    transition: 0.9s;
+    transform: rotateY(360deg);
+}
+.wrapper{
+    display: inline-block;
+    width: 200px;
+    overflow: hidden;
+    text-align: center;
+}
+#hover_jet:hover{
+    transition: 0.6s;
+    transform: rotate(-90deg);
+}
+#hover_file:hover{
+    transition: 1.2s;
+    transform: rotateY(180deg);
+}
+#hover_quality:hover{
+    color: #f5aa02
+}
+.fa-spin-hover:hover {
+    animation: fa-spin 2s infinite linear;
+}
+a {
+    text-decoration: none !important;
+}
+.remove_transition:hover {
+    transition: none !important;
+    transform: none !important;
+}
+/* Tooltip */
+.test + .tooltip > .tooltip-inner {
+    background-color: #f5aa02;
+    color: #FFFFFF;
+    border: 1px solid green;
+    padding: 16px;
+    font-size: 16px;
+}
+/* Tooltip on top */
+.test + .tooltip.top > .tooltip-arrow {
+    border-top: 5px solid green;
+}
+/* Tooltip on bottom */
+.test + .tooltip.bottom > .tooltip-arrow {
+    border-bottom: 5px solid blue;
+}
+/* Tooltip on left */
+.test + .tooltip.left > .tooltip-arrow {
+    border-left: 5px solid red;
+}
+/* Tooltip on right */
+.test + .tooltip.right > .tooltip-arrow {
+    border-right: 5px solid black;
+}
+.test2 + .tooltip > .tooltip-inner {
+    background-color: #30a36f;
+    color: #FFFFFF;
+    border: 1px solid green;
+    padding: 16px;
+    font-size: 16px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.testimonial {
+    margin: 0 0 0 30px;
+    width:95%;
+    padding:15px;
+    position: relative;
+    font-style: italic;
+    border: 1px solid black;
+    position: relative;
+}
+
+.testimonial:before,
+.testimonial:after {
+    position: absolute;
+    content:"";
+    width: 0;
+    height: 0;
+    top:100%;
+    left:15%;
+    border-left: 0px solid transparent;
+}
+
+.testimonial:before {
+
+    border-right: 34px solid transparent;
+    border-top: 34px solid black;
+    z-index:1;
+
+}
+
+.testimonial:after {
+    margin-top:-1px;
+    margin-left:1px;
+    border-right: 33px solid transparent;
+    border-top: 33px solid white;
+    z-index:2;
+}
