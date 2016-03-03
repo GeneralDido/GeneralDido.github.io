@@ -49,4 +49,4 @@ $(function() {
 ga('create', 'UA-74623303-2', 'auto');
 ga('send', 'pageview');
 
- $('.test').tooltip();
+ $('.test').tooltip()
