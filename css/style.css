@@ -14,7 +14,7 @@
     margin-right: 140px;
 }
 #make_larger {
-    min-height: 600px;!important;
+    min-height: 510px;!important;
     overflow:hidden;
     width: 100%;
 }
@@ -24,7 +24,7 @@
     width: 100%;
 }
 #make_larger3 {
-    min-height: 600px;!important;
+    min-height: 570px;!important;
     overflow:hidden;
     width: 100%;
 }
@@ -34,7 +34,12 @@
     width: 100%;
 }
 #make_larger5 {
-    min-height: 580px;!important;
+    min-height: 530px;!important;
+    overflow:hidden;
+    width: 100%;
+}
+#make_larger6 {
+    min-height: 500px;!important;
     overflow:hidden;
     width: 100%;
 }
@@ -147,4 +152,7 @@ a {
     border-right: 33px solid transparent;
     border-top: 33px solid white;
     z-index:2;
+}
+.panel-body {
+    background-color: #30a36f!important;
 }
