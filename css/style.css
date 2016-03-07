@@ -14,12 +14,12 @@
     margin-right: 140px;
 }
 #make_larger {
-    min-height: 510px;!important;
+    min-height: 500px;!important;
     overflow:hidden;
     width: 100%;
 }
 #make_larger2 {
-    min-height: 1230px;!important;
+    min-height: 1450px;!important;
     overflow:hidden;
     width: 100%;
 }
@@ -124,7 +124,12 @@ a {
     position: relative;
     font-style: italic;
     border: 1px solid black;
-    position: relative;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 2px 2px 4px #30a36f;
+    -moz-box-shadow: 2px 2px 4px #30a36f;
+    box-shadow: 2px 2px 4px #30a36f;
 }
 
 .testimonial:before,
@@ -153,6 +158,16 @@ a {
     border-top: 33px solid white;
     z-index:2;
 }
-.panel-body {
+#panel_body {
+    border-style: solid;
+    border-color: #f5aa02;
     background-color: #30a36f!important;
+}
+#panel_body2 {
+    border-style: solid;
+    border-color: #30a36f!important;
+}
+#panel_body3 {
+    border-style: solid;
+    border-color: #30a36f!important;
 }

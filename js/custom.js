@@ -19,7 +19,7 @@ $(function() {
             if (target.length) {
                 $('html,body').animate({
                     scrollTop: target.offset().top - 70
-                }, 600);
+                }, 550);
                 return false;
             }
         }
