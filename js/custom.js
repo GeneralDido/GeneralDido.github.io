@@ -30,7 +30,7 @@ $(function() {
  $("form").on("submit", function() {
      message = $("#contactform").serialize();
      $.ajax({
-         url: "//formspree.io/dimpanouris@gmail.com",
+         url: "https://formspree.io/dimpanouris@gmail.com",
          method: "POST",
          data: {message: message},
          dataType: "json"
